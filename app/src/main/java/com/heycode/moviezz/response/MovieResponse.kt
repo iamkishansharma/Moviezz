@@ -7,6 +7,14 @@ import com.heycode.moviezz.model.MovieModel
 class MovieResponse {
     @SerializedName("results")
     @Expose
-    val movie: MovieModel = TODO()
+    private lateinit var movie: MovieModel
+
+    fun getMovie():MovieModel{
+        return movie
+    }
+
+    override fun toString(): String {
+        return "MovieResponse{movie=$movie}"
+    }
 
 }
