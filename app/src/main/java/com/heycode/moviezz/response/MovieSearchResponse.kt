@@ -7,19 +7,19 @@ import com.heycode.moviezz.model.MovieModel
 // getting multiple popular movies list
 class MovieSearchResponse {
     @SerializedName("total_results")
-    @Expose
-    private var total_count:Int = 0
+    @Expose()
+    private var total_count: Int=0
 
 
     @SerializedName("results")
-    @Expose
+    @Expose()
     private lateinit var movies: List<MovieModel>
 
-    fun getTotalCount(): Int {
+    fun getTotalCount(): Int? {
         return total_count
     }
 
-    fun getMovies(): List<MovieModel> {
+    fun getMovies(): List<MovieModel>? {
         return movies
     }
 

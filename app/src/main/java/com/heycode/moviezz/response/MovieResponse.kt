@@ -9,7 +9,7 @@ class MovieResponse {
     @Expose
     private lateinit var movie: MovieModel
 
-    fun getMovie():MovieModel{
+    public fun getMovie():MovieModel{
         return movie
     }
 
